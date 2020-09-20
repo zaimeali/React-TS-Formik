@@ -2,3 +2,70 @@
     background-color: #442233;
     height: 100vh;
 }
+
+.form__body {
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.formTag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.formField {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.formError {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    color: red;
+    font-size: 12px;
+}
+
+.formLabel {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.formInput {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(120, 153, 201, 0.637);
+    outline: none;
+    width: 200px;
+}
+
+.formInput:focus {
+    border: 1px solid rgba(71, 71, 71, 0.637);
+}
+
+.btn {
+    margin-top: 20px !important;
+}
+
+.MuiButton-label {
+    font-size: 13px;
+    padding-right: 13px;
+    padding-left: 13px;
+    font-weight: 500;
+}
+
+.MuiStepper-root {
+    background: none !important;
+}
+
+.MuiStepLabel-labelContainer > span {
+    color: white !important;
+}
