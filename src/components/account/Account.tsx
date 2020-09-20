@@ -95,6 +95,13 @@ export const Account: React.FC<{}> = ({ submit }) => {
             <ErrorMessage name="email" />
           </div>
 
+          <hr style={{
+            width: "99%",
+            backgroundColor: "black",
+            borderColor: "black",
+            borderWidth: "0.5px",
+          }} />
+
           <Button 
             className="btn"
             variant="contained" 

@@ -92,6 +92,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       width: '100%',
+      marginTop: theme.spacing(1) * 10,
     },
     button: {
       marginRight: theme.spacing(1),
