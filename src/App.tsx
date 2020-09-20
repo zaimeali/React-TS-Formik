@@ -2,12 +2,13 @@ import React from 'react';
 import './App.css';
 
 // Components
-import StepperForm from './components/Stepper';
+import Form from './components/Form';
+
 
 function App() {
   return (
     <div className="App">
-        <StepperForm />
+        <Form />
     </div>
   );
 }
