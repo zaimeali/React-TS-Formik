@@ -9,8 +9,8 @@ import { StepIconProps } from '@material-ui/core/StepIcon';
 
 // Components
 import { Account } from './account/Account';
-import PersonalInformation from './personal/PersonalInformation';
-import ReviewProfile from './review/ReviewProfile';
+import { PersonalInformation } from './personal/PersonalInformation';
+import { ReviewProfile } from './review/ReviewProfile';
 import FinishForm from './FinishForm';
 
 // Icons

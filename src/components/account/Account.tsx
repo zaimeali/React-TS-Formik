@@ -31,7 +31,7 @@ export const Account: React.FC<{}> = ({ submit }) => {
       .required('You forgot to enter Username'),
     password: Yup.string()
       .max(32, 'Must be 32 characters less')
-      .min(8, 'Must be 58 characters long')
+      .min(8, 'Must be 8 characters long')
       .required('You forgot to enter Password'),
     email: Yup.string()
       .email("You've entered Invalid Email Address")
