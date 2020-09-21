@@ -76,7 +76,7 @@
 }
 
 .formInput:focus {
-    border: 1px solid rgba(71, 71, 71, 0.637);
+    border: 2px solid rgba(71, 71, 71, 0.4);
 }
 
 .btn {

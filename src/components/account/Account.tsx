@@ -20,8 +20,8 @@ export const Account: React.FC<{}> = ({ submit }) => {
     email: '',
   };
 
-  const submitForm = (values, actions) => {
-    alert("nice")
+  const submitForm = (values) => {
+    submit(1)
   }
 
   const accountValidation = {
@@ -30,8 +30,8 @@ export const Account: React.FC<{}> = ({ submit }) => {
       .min(5, 'Must be 5 characters long')
       .required('You forgot to enter Username'),
     password: Yup.string()
-      .max(15, 'Must be 15 characters less')
-      .min(5, 'Must be 5 characters long')
+      .max(32, 'Must be 32 characters less')
+      .min(8, 'Must be 58 characters long')
       .required('You forgot to enter Password'),
     email: Yup.string()
       .email("You've entered Invalid Email Address")
@@ -44,7 +44,7 @@ export const Account: React.FC<{}> = ({ submit }) => {
     >
       <Formik
         initialValues={ accountInitial }
-        onSubmit={ (values, actions) => submitForm(values, actions) }
+        onSubmit={ (values) => submitForm(values) }
         validationSchema={ Yup.object(accountValidation) }
       > 
         <Form
@@ -59,6 +59,7 @@ export const Account: React.FC<{}> = ({ submit }) => {
               name="username" 
               className="formInput"
               placeholder="Enter Username" 
+              type="text"
             />
           </div>
           <div className="formError">
@@ -74,6 +75,7 @@ export const Account: React.FC<{}> = ({ submit }) => {
               name="password" 
               className="formInput"
               placeholder="Enter Password" 
+              type="password"
             />
           </div>
           <div className="formError">
@@ -89,6 +91,7 @@ export const Account: React.FC<{}> = ({ submit }) => {
               name="email" 
               className="formInput"
               placeholder="Enter Email" 
+              type="email"
             />
           </div>
           <div className="formError">
@@ -107,7 +110,7 @@ export const Account: React.FC<{}> = ({ submit }) => {
             variant="contained" 
             type="submit"
             size="small"
-          >Submit</Button>
+          >Next</Button>
 
         </Form>
       </Formik>

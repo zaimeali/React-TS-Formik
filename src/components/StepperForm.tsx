@@ -108,14 +108,14 @@ function getSteps() {
   return ['Account Setup', 'Personal Information', 'Review your Profile'];
 }
 
-function getStepContent(step: number) {
+function getStepContent(step: number, setStep: any) {
   switch (step) {
     case 0:
-      return <Account />;
+      return <Account submit={ setStep } />;
     case 1:
-      return <PersonalInformation />;
+      return <PersonalInformation submit={ setStep } />;
     case 2:
-      return <ReviewProfile />;
+      return <ReviewProfile submit={ setStep } />;
     default:
       return 'Unknown step';
   }
@@ -149,7 +149,7 @@ export default function CustomizedSteppers() {
       </Stepper>
       {
 
-        getStepContent(activeStep)
+        getStepContent(activeStep, setActiveStep)
 
       }
       {/* <div>
